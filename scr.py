@@ -75,7 +75,7 @@ def test():
    element.send_keys(textstr)
    element.send_keys(Keys.RETURN)
    #github
-   element.send_keys("https://github.com")
+   element.send_keys("https://github.com/allPOWERFUL933/AutoTest")
    element.send_keys(Keys.RETURN)
    element.send_keys(Keys.RETURN)
    #гиперссылка
@@ -100,7 +100,7 @@ def test():
    nextel.send_keys(os.path.dirname(sys.argv[0]) + "\\text.PDF")
    
    #картинка
-   image = Image.open(os.path.dirname(sys.argv[0]) + "/pic.jpg")
+   image = Image.open(os.path.dirname(sys.argv[0]) + "\\pic.jpg")
    output = BytesIO()
    image.convert("RGB").save(output, "BMP")
    data = output.getvalue()[14:]
