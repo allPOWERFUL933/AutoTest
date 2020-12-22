@@ -145,7 +145,7 @@ def test():
    element.send_keys(Keys.RETURN)
    print('поставлена подпись')
 
-   time.sleep(5) #подождать, пока картинка загрузится. как еще увидеть изменение поля?
+   time.sleep(5)
    #отправить
    nextel = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(concat(' ', @class, ' '), ' ComposeControlPanelButton-Button ')]")))
    nextel.click()
